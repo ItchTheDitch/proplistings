@@ -1,0 +1,14 @@
+<div class="jumbotron text-center">
+
+  <div *ngIf="!(user | async)" class="container">
+    <h1>Property Listings</h1>
+    <a (click)="login()"><img src="assets/img/google.png" alt=""></a>
+  </div>
+
+  <div *ngIf="(user | async)" class="container">
+    <h1>Property Listings</h1>
+    <h2>Wellcome </h2>
+    <p>Acces the hottest properties available</p>
+  </div>
+
+</div>
